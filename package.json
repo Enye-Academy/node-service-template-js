@@ -4,8 +4,12 @@
   "description": "Describe what you service does",
   "main": "src/index.js",
   "scripts": {
-    "start": "node --use_strict .",
-    "test": "nyc --reporter=clover --reporter=text --reporter=html mocha",
+    "build": "webpack --mode production --config webpack.config.js",
+    "pre-dev": "webpack --mode development --config webpack.config.js",
+    "dev": "npm run nodemon",
+    "nodemon": "nodemon dist/server.js",
+    "start": "node dist/server.js",
+    "test": "./node_modules/.bin/mocha --require @babel/register",
     "debug": "node --inspect",
     "lint": "eslint ."
   },
@@ -18,5 +22,23 @@
   "bugs": {
     "url": "https://github.com/Enye-Academy/node-service-template-js/issues"
   },
-  "homepage": "https://github.com/Enye-Academy/node-service-template-js#readme"
+  "homepage": "https://github.com/Enye-Academy/node-service-template-js#readme",
+  "dependencies": {
+    "moleculer": "^0.13.9"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "assert": "^2.0.0",
+    "babel-loader": "^8.0.0-beta.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^9.0.1",
+    "mocha": "^6.1.4",
+    "nodemon": "^1.19.0",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-node-externals": "^1.7.2"
+  }
 }

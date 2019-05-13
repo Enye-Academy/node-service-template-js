@@ -1,0 +1,13 @@
+extends:
+  - eslint:recommended
+  - plugin:node/recommended
+env:
+  es6: true
+  node: true
+parserOptions:
+  sourceType: module
+rules:
+  no-param-reassign:
+  - warn
+  node/no-unpublished-require: 0
+  node/no-unsupported-features/es-syntax: 0
