@@ -1,0 +1,22 @@
+{
+  "name": "replace-with-your-service-name",
+  "version": "0.0.1",
+  "description": "Describe what you service does",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node --use_strict .",
+    "test": "nyc --reporter=clover --reporter=text --reporter=html mocha",
+    "debug": "node --inspect",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Enye-Academy/node-service-template-js.git"
+  },
+  "author": "Uche Nnadi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Enye-Academy/node-service-template-js/issues"
+  },
+  "homepage": "https://github.com/Enye-Academy/node-service-template-js#readme"
+}

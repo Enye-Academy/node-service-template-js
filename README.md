@@ -1,6 +1,6 @@
 # Enye JavaScript Service Template
 This template is designed to get you up and running writing a JavaScript based service.
-Go through this README.md and replace all the section that say `TODO`
+Go through this README.md and replace all the sections that say `TODO`.
 
 # (TODO: Put your service name)
 TODO: Put a quick description of the service here.
