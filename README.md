@@ -10,6 +10,7 @@ TODO: Provide how to interact with your service at a high level. This could incl
 
 ## Dependencies
 
+> Open API => https://github.com/OAI/OpenAPI-Specification/blob/OpenAPI.next/versions/3.0.0.md
 ### Services
 > TODO: Replace the above list with which other services this service calls.
 
